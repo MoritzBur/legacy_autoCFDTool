@@ -22,7 +22,7 @@
                                 <transformation>
                                     <rotation>
                                         <x>0.0</x>
-                                        <y>***AOA</y>
+                                        <y>0.0</y>
                                         <z>0.0</z>
                                     </rotation>
                                     <scaling>
