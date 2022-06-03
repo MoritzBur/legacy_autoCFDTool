@@ -18,7 +18,7 @@
                         <transformation>
                             <translation>
                                 <x>0.6</x>
-                                <z>0.2</z>
+                                <z>0.174</z>
                             </translation>
                         </transformation>
                         <sections>
@@ -167,14 +167,14 @@
                         <positionings>
                             <positioning uID="kinkPos">
                                 <name>Vertical Tailplane Section Positioning</name>
-                                <length>1.61</length>
+                                <length>0.8</length>
                                 <sweepAngle>0</sweepAngle>
                                 <dihedralAngle>0</dihedralAngle>
                                 <toSectionUID>wing1section2</toSectionUID>
                             </positioning>
                             <positioning uID="tipPos">
                                 <name>Vertical Tailplane Section Positioning</name>
-                                <length>4.6</length>
+                                <length>2.3</length>
                                 <sweepAngle>0</sweepAngle>
                                 <dihedralAngle>0</dihedralAngle>
                                 <toSectionUID>wing1section3</toSectionUID>
@@ -188,7 +188,7 @@
                         <description>In this example, the aircraft fuselage represents the hierarchically topmost element. This can be seen from the fact that the fuselage does not have an element called parentUID.</description>
                         <transformation>
                             <scaling>
-                                <x>1.0</x>
+                                <x>3.28</x>
                                 <y>1.0</y>
                                 <z>1.0</z>
                             </scaling>
@@ -199,7 +199,7 @@
                             </translation>
                         </transformation>
                         <sections>
-                            <section uID="Section1ID">
+                            <section uID="noseSection1ID">
                                 <name>Section1</name>
                                 <transformation>
                                     <scaling>
@@ -209,20 +209,72 @@
                                     </scaling>
                                 </transformation>
                                 <elements>
-                                    <element uID="Section1IDElement1">
+                                    <element uID="noseSection1IDElement1">
                                         <name>Section 1</name>
                                         <profileUID>squareProfile</profileUID>
                                         <transformation>
                                             <scaling>
-                                                <x>0.01</x>
-                                                <y>0.01</y>
-                                                <z>0.01</z>
+                                                <x>0.001</x>
+                                                <y>0.001</y>
+                                                <z>0.001</z>
                                             </scaling>
                                         </transformation>
                                     </element>
                                 </elements>
                             </section>
-                            <section uID="Section2ID">
+                            <section uID="noseSection2ID">
+                                <name>Section1</name>
+                                <transformation>
+                                    <scaling>
+                                        <x>1.0</x>
+                                        <y>1.0</y>
+                                        <z>1.0</z>
+                                    </scaling>
+                                    <translation>
+                                        <x>0.025</x>
+                                    </translation>
+                                </transformation>
+                                <elements>
+                                    <element uID="noseSection2IDElement1">
+                                        <name>Section 1</name>
+                                        <profileUID>squareProfile</profileUID>
+                                        <transformation>
+                                            <scaling>
+                                                <x>0.08</x>
+                                                <y>0.08</y>
+                                                <z>0.08</z>
+                                            </scaling>
+                                        </transformation>
+                                    </element>
+                                </elements>
+                            </section>
+                            <section uID="noseSection3ID">
+                                <name>Section1</name>
+                                <transformation>
+                                    <scaling>
+                                        <x>1.0</x>
+                                        <y>1.0</y>
+                                        <z>1.0</z>
+                                    </scaling>
+                                    <translation>
+                                        <x>0.09</x>
+                                    </translation>
+                                </transformation>
+                                <elements>
+                                    <element uID="noseSection3IDElement1">
+                                        <name>Section 1</name>
+                                        <profileUID>squareProfile</profileUID>
+                                        <transformation>
+                                            <scaling>
+                                                <x>0.17</x>
+                                                <y>0.17</y>
+                                                <z>0.17</z>
+                                            </scaling>
+                                        </transformation>
+                                    </element>
+                                </elements>
+                            </section>
+                            <section uID="noseSection4ID">
                                 <name>Section1</name>
                                 <transformation>
                                     <scaling>
@@ -235,33 +287,7 @@
                                     </translation>
                                 </transformation>
                                 <elements>
-                                    <element uID="Section2IDElement1">
-                                        <name>Section 1</name>
-                                        <profileUID>squareProfile</profileUID>
-                                        <transformation>
-                                            <scaling>
-                                                <x>0.15</x>
-                                                <y>0.15</y>
-                                                <z>0.15</z>
-                                            </scaling>
-                                        </transformation>
-                                    </element>
-                                </elements>
-                            </section>
-                            <section uID="Section3ID">
-                                <name>Section1</name>
-                                <transformation>
-                                    <scaling>
-                                        <x>1.0</x>
-                                        <y>1.0</y>
-                                        <z>1.0</z>
-                                    </scaling>
-                                    <translation>
-                                        <x>0.68</x>
-                                    </translation>
-                                </transformation>
-                                <elements>
-                                    <element uID="Section3IDElement1">
+                                    <element uID="noseSection4IDElement1">
                                         <name>Section 1</name>
                                         <profileUID>squareProfile</profileUID>
                                         <transformation>
@@ -274,7 +300,7 @@
                                     </element>
                                 </elements>
                             </section>
-                        <section uID="Section4ID">
+                        <section uID="hullSection1ID">
                             <name>Section1</name>
                             <transformation>
                                 <scaling>
@@ -283,11 +309,11 @@
                                     <z>1.0</z>
                                 </scaling>
                                 <translation>
-                                    <x>2.18</x>
+                                    <x>0.62</x>
                                 </translation>
                             </transformation>
                             <elements>
-                                <element uID="Section4IDElement1">
+                                <element uID="hullSection1IDElement1">
                                     <name>Section 1</name>
                                     <profileUID>squareProfile</profileUID>
                                     <transformation>
@@ -300,7 +326,7 @@
                                 </element>
                             </elements>
                         </section>
-                        <section uID="Section5ID">
+                        <section uID="hullSection2ID">
                             <name>Section1</name>
                             <transformation>
                                 <scaling>
@@ -309,18 +335,96 @@
                                     <z>1.0</z>
                                 </scaling>
                                 <translation>
-                                    <x>3.28</x>
+                                    <x>0.66</x>
                                 </translation>
                             </transformation>
                             <elements>
-                                <element uID="Section5IDElement1">
+                                <element uID="hullSection2IDElement1">
                                     <name>Section 1</name>
                                     <profileUID>squareProfile</profileUID>
                                     <transformation>
                                         <scaling>
-                                            <x>0.01</x>
-                                            <y>0.01</y>
-                                            <z>0.01</z>
+                                            <x>0.195</x>
+                                            <y>0.195</y>
+                                            <z>0.195</z>
+                                        </scaling>
+                                    </transformation>
+                                </element>
+                            </elements>
+                        </section>
+                        <section uID="hullSection3ID">
+                            <name>Section1</name>
+                            <transformation>
+                                <scaling>
+                                    <x>1.0</x>
+                                    <y>1.0</y>
+                                    <z>1.0</z>
+                                </scaling>
+                                <translation>
+                                    <x>0.7</x>
+                                </translation>
+                            </transformation>
+                            <elements>
+                                <element uID="hullSection3IDElement1">
+                                    <name>Section 1</name>
+                                    <profileUID>squareProfile</profileUID>
+                                    <transformation>
+                                        <scaling>
+                                            <x>0.18</x>
+                                            <y>0.18</y>
+                                            <z>0.18</z>
+                                        </scaling>
+                                    </transformation>
+                                </element>
+                            </elements>
+                        </section>
+                        <section uID="tailSection1ID">
+                            <name>Section1</name>
+                            <transformation>
+                                <scaling>
+                                    <x>1.0</x>
+                                    <y>1.0</y>
+                                    <z>1.0</z>
+                                </scaling>
+                                <translation>
+                                    <x>0.84</x>
+                                </translation>
+                            </transformation>
+                            <elements>
+                                <element uID="tailSection1IDElement1">
+                                    <name>Section 1</name>
+                                    <profileUID>squareProfile</profileUID>
+                                    <transformation>
+                                        <scaling>
+                                            <x>0.1</x>
+                                            <y>0.1</y>
+                                            <z>0.1</z>
+                                        </scaling>
+                                    </transformation>
+                                </element>
+                            </elements>
+                        </section>
+                        <section uID="tailSection2ID">
+                            <name>Section1</name>
+                            <transformation>
+                                <scaling>
+                                    <x>1.0</x>
+                                    <y>1.0</y>
+                                    <z>1.0</z>
+                                </scaling>
+                                <translation>
+                                    <x>1</x>
+                                </translation>
+                            </transformation>
+                            <elements>
+                                <element uID="tailSection2IDElement1">
+                                    <name>Section 1</name>
+                                    <profileUID>squareProfile</profileUID>
+                                    <transformation>
+                                        <scaling>
+                                            <x>0.001</x>
+                                            <y>0.001</y>
+                                            <z>0.001</z>
                                         </scaling>
                                     </transformation>
                                 </element>
@@ -328,25 +432,45 @@
                         </section>
                     </sections>
                         <segments>
-                            <segment uID="segmentSegment1ID">
+                            <segment uID="noseSegmentSegment1ID">
                                 <name>Segment1</name>
-                                <fromElementUID>Section1IDElement1</fromElementUID>
-                                <toElementUID>Section2IDElement1</toElementUID>
+                                <fromElementUID>noseSection1IDElement1</fromElementUID>
+                                <toElementUID>noseSection2IDElement1</toElementUID>
                             </segment>
-                            <segment uID="segmentSegment2ID">
+                            <segment uID="noseSegmentSegment2ID">
                                 <name>Segment1</name>
-                                <fromElementUID>Section2IDElement1</fromElementUID>
-                                <toElementUID>Section3IDElement1</toElementUID>
+                                <fromElementUID>noseSection2IDElement1</fromElementUID>
+                                <toElementUID>noseSection3IDElement1</toElementUID>
                             </segment>
-                            <segment uID="segmentSegment3ID">
+                            <segment uID="noseSegmentSegment3ID">
                                 <name>Segment1</name>
-                                <fromElementUID>Section3IDElement1</fromElementUID>
-                                <toElementUID>Section4IDElement1</toElementUID>
+                                <fromElementUID>noseSection3IDElement1</fromElementUID>
+                                <toElementUID>noseSection4IDElement1</toElementUID>
                             </segment>
-                            <segment uID="segmentSegment4ID">
+                            <segment uID="hullSegmentSegment1ID">
                                 <name>Segment1</name>
-                                <fromElementUID>Section4IDElement1</fromElementUID>
-                                <toElementUID>Section5IDElement1</toElementUID>
+                                <fromElementUID>noseSection4IDElement1</fromElementUID>
+                                <toElementUID>hullSection1IDElement1</toElementUID>
+                            </segment>
+                            <segment uID="hullSegmentSegment2ID">
+                                <name>Segment1</name>
+                                <fromElementUID>hullSection1IDElement1</fromElementUID>
+                                <toElementUID>hullSection2IDElement1</toElementUID>
+                            </segment>
+                            <segment uID="hullSegmentSegment3ID">
+                                <name>Segment1</name>
+                                <fromElementUID>hullSection2IDElement1</fromElementUID>
+                                <toElementUID>hullSection3IDElement1</toElementUID>
+                            </segment>
+                            <segment uID="tailSegmentSegment1ID">
+                                <name>Segment1</name>
+                                <fromElementUID>hullSection3IDElement1</fromElementUID>
+                                <toElementUID>tailSection1IDElement1</toElementUID>
+                            </segment>
+                            <segment uID="tailSegmentSegment2ID">
+                                <name>Segment1</name>
+                                <fromElementUID>tailSection1IDElement1</fromElementUID>
+                                <toElementUID>tailSection2IDElement1</toElementUID>
                             </segment>
                         </segments>
                     </fuselage>
