@@ -1,7 +1,12 @@
-%opens aircraft configuration file as variable "param"
+% step1_loadParam.m
+% opens aircraft configuration file as variable "param"
+% date of creation: 03.06.2022
+% developer:Moritz Burmester
+% contact:moritz@burmester-iz.de
 
 
-%Path has to be set or automated in some way!
+
+%Path for input file has to be set or automated in some way!
 
 input = load('M:\Studium\Projektarbeit\Ressourcen\Input_Dateien\Flugzeug_9330466532.mat'); %load input file as variable
 
@@ -11,5 +16,4 @@ param = cell{1};                      %extract matrix from cell
 
 clear cell, clear input  %delete temporary data
 
-msg = "parameter input file loaded"
-clear msg
+disp('parameter input file loaded')
