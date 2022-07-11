@@ -18,25 +18,20 @@ else
 end
 
 % widthFuselage
-widthFuselage = num2str(param{54,4}*1/1000); % scale with respect to profile base definition in cpacs file
+widthFuselage = param{54,4}*1/2000; % scale with respect to profile base definition in cpacs file
 
 % heightFuselage
-heightFuselage = num2str(param{184,4}*1/1000); % scale with respect to profile base definition in cpacs file
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%bis hier getestet und ok!
+heightFuselage = param{184,4}*1/2000; % scale with respect to profile base definition in cpacs file
+
 % lengthNose
-% noseSection1x is always = 0
-noseSection2x = param{216,4}*0.125;
-noseSection3x = param{216,4}*0.45;
-noseSection4x = param{216,4}; % this will create a smooth ellipsoid type nose with the section scaling as defines in cpacs file
+section2x = param{216,4}*0.125
+section3x = param{216,4}*0.45
+section4x = param{216,4} % this will create a smooth ellipsoid type nose with the section scaling as defines in cpacs file
 
 % lengthMidSection
-hullSection1x = param{216,4}+param{219,4}*0.925;
-hullSection2x = param{216,4}+param{219,4};
-hullSection3x = param{216,4}+param{219,4}*1.075;
+
 
 % lenghtTail
-tailSection1x = param{216,4}+param{219,4}+param{212,4}*0.53;
-tailSection2x = param{216,4}+param{219,4}+param{212,4};
 
 
 % main wing paramaters

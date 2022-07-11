@@ -8,7 +8,13 @@
 %open default cpacs file
 cpacs = fileread('candidateScheme.cpacs.xml');
 %replace dummy parameters
-newcpacs = strrep(cpacs,'***AOA',testParameter);
+cpacs = strrep(cpacs,'CROSSSECTIONTYPE',crossSectionType);
+cpacs = strrep(cpacs,'WIDTHFUSELAGE',widthFuselage);
+cpacs = strrep(cpacs,'HEIGHTFUSELAGE',heightFuselage);
+
 %save newcpacs to CAD-export ready cpacs file
+fid = fopen('candidate.cpacs.xml','wt');
+fprintf(fid,'%s',cpacs);
+fclose(fid);
 
 disp('CPACS definition file has been edited')
