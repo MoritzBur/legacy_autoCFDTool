@@ -25,18 +25,18 @@ heightFuselage = num2str(param{184,4}*1/1000); % scale with respect to profile b
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%bis hier getestet und ok!
 % lengthNose
 % noseSection1x is always = 0
-noseSection2x = param{216,4}*0.125;
-noseSection3x = param{216,4}*0.45;
-noseSection4x = param{216,4}; % this will create a smooth ellipsoid type nose with the section scaling as defines in cpacs file
+noseSection2x = num2str(param{216,4}*0.125);
+noseSection3x = num2str(param{216,4}*0.45);
+noseSection4x = num2str(param{216,4}); % this will create a smooth ellipsoid type nose with the section scaling as defines in cpacs file
 
 % lengthMidSection
-hullSection1x = param{216,4}+param{219,4}*0.925;
-hullSection2x = param{216,4}+param{219,4};
-hullSection3x = param{216,4}+param{219,4}*1.075;
+hullSection1x = num2str(param{216,4}+param{219,4}*0.925);
+hullSection2x = num2str(param{216,4}+param{219,4});
+hullSection3x = num2str(param{216,4}+param{219,4}*1.075);
 
 % lenghtTail
-tailSection1x = param{216,4}+param{219,4}+param{212,4}*0.53;
-tailSection2x = param{216,4}+param{219,4}+param{212,4};
+tailSection1x = num2str(param{216,4}+param{219,4}+param{212,4}*0.53);
+tailSection2x = num2str(param{216,4}+param{219,4}+param{212,4});
 
 
 % main wing paramaters

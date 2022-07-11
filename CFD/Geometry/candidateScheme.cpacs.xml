@@ -527,7 +527,7 @@
                                         <z>1.0</z>
                                     </scaling>
                                     <translation>
-                                        <x>0.025</x>
+                                        <x>NOSESECTION2X</x>
                                     </translation>
                                 </transformation>
                                 <elements>
@@ -553,7 +553,7 @@
                                         <z>1.0</z>
                                     </scaling>
                                     <translation>
-                                        <x>0.09</x>
+                                        <x>NOSESECTION3X</x>
                                     </translation>
                                 </transformation>
                                 <elements>
@@ -579,7 +579,7 @@
                                         <z>1.0</z>
                                     </scaling>
                                     <translation>
-                                        <x>0.2</x>
+                                        <x>NOSESECTION4X</x>
                                     </translation>
                                 </transformation>
                                 <elements>
@@ -605,7 +605,7 @@
                                     <z>1.0</z>
                                 </scaling>
                                 <translation>
-                                    <x>0.62</x>
+                                    <x>HULLSECTION1X</x>
                                 </translation>
                             </transformation>
                             <elements>
@@ -631,7 +631,7 @@
                                     <z>1.0</z>
                                 </scaling>
                                 <translation>
-                                    <x>0.66</x>
+                                    <x>HULLSECTION2X</x>
                                 </translation>
                             </transformation>
                             <elements>
@@ -657,7 +657,7 @@
                                     <z>1.0</z>
                                 </scaling>
                                 <translation>
-                                    <x>0.7</x>
+                                    <x>HULLSECTION3X</x>
                                 </translation>
                             </transformation>
                             <elements>
@@ -683,7 +683,7 @@
                                     <z>1.0</z>
                                 </scaling>
                                 <translation>
-                                    <x>0.84</x>
+                                    <x>TAILSECTION1X</x>
                                 </translation>
                             </transformation>
                             <elements>
@@ -709,7 +709,7 @@
                                     <z>1.0</z>
                                 </scaling>
                                 <translation>
-                                    <x>1</x>
+                                    <x>TAILSECTION2X</x>
                                 </translation>
                             </transformation>
                             <elements>
