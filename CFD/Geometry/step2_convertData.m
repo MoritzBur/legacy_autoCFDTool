@@ -43,7 +43,7 @@ tailSection2x = num2str(param{216,4}+param{219,4}+param{212,4});
 %%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%
 % lePosWing
-lePosWing = num2str(param{163,4}-param{224,4}*0.25);
+lePosWing = num2str(param{163,4}+param{216,4}-param{224,4}*0.25);
 
 % planformWing
 % special treatment for different planform options necessary!

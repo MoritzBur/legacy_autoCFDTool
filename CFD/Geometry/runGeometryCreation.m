@@ -8,8 +8,8 @@
 run("step1_loadParam.m")
 run("step2_convertData.m")
 run("step3_CPACSeditor.m")
-%run("step4_exportCAD.m")
+run("step4_exportCAD.m")
 
-%clear;
+clear;
 
 disp('runGeometryCreation finished')

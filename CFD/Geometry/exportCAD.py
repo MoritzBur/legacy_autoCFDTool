@@ -87,8 +87,8 @@ def python_demo(filename):
             print()
 
     # Export geometry to iges file
-    print ('Exporting geometry to igesexport.igs')
-    tigl.exportIGES('igesexport.igs')
+    print ('Exporting geometry to candidate.igs')
+    tigl.exportIGES('candidate.igs')
 
     tigl.logToFileDisabled()
     tigl.close()
