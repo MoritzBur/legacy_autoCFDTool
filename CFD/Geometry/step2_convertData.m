@@ -60,6 +60,9 @@ rootLengthWing = num2str(param{224,4});
 % tipLengthWing
 tipLengthWing = num2str(param{224,4}*param{259,4});
 
+% tipSetBackWing (correct x Position of tip section to get straight 25% line)
+tipSetBackWing = num2str((param{224,4}-param{224,4}*param{259,4})*0.25);
+
 % alphaWingRoot
 alphaWingRoot = num2str(param{27,4});
 
@@ -87,14 +90,68 @@ sweepWing = num2str(param{370,4});
 %%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%
 % lePosElevator
+lePosElevator = num2str(param{201,4}+param{216,4}-param{225,4}*0.25);
+
 % planformElevator
+% special treatment for different planform options necessary!
+
 % profileElevator
+profileElevator = convertCharsToStrings(param{378,4});
+
 % rootLengthElevator
+rootLengthElevator = num2str(param{225,4});
+
 % tipLengthElevator
+if param{182,4}==0  % rectangular planform
+    tipLengthElevator = num2str(param{225,4});
+
+elseif param{182,4}==1 % trapezoidal planform
+    tipLengthElevator = num2str(param{225,4}*param{261,4});
+
+elseif param{182,4}==2 % rectangle + trapezoidal planform
+    tipLengthElevator = num2str(param{225,4}*param{261,4});
+end
+
+% tipSetBackElevator
+tipSetBackElevator = num2str((str2double(rootLengthElevator)-str2double(tipLengthElevator))*0.25);
+
+
 % alphaElevator
+alphaElevatorRoot = num2str(param{28,4});
+
+% alphaElevatorMidSection
+if param{182,4}==0
+    alphaElevatorMidSection = num2str(param{28,4});
+
+elseif param{182,4}==1
+    alphaElevatorMidSection = num2str(param{28,4});
+
+elseif param{182,4}==2
+    alphaElevatorMidSection = num2str(param{28,4}+param{450,4}*param{48,4});
+end
+
+
+% alphaElevatorTip
+alphaElevatorTip = num2str(param{28,4}+param{450,4});
+
 % twistElevator
+
 % semiSpanElevator
+semiSpanElevator = num2str(param{58,4}/2);
+
+% kinkPosElevator
+if param{182,4}==0
+    kinkPosElevator = num2str(0.01);
+
+elseif param{182,4}==1
+    kinkPosElevator = num2str(0.01);
+
+elseif param{182,4}==2
+    kinkPosElevator = num2str(param{48,4}*param{58,4}/2);
+end
+
 % sweepElevator
+sweepElevator = num2str(param{371,4});
 
 
 
@@ -102,9 +159,25 @@ sweepWing = num2str(param{370,4});
 %%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%
 % lePosRudder
+lePosRudder = num2str((param{201,4}+param{216,4}-param{225,4}*0.25)-(2*param{442,4}/(param{61,4}*(1+param{263,4}))-param{225,4}));
+
 % planformRudder
+% special treatment for different planform options necessary!
+
 % profileRudder
+profileRudder = convertCharsToStrings(param{379,4});
+
 % rootLengthRudder
+rootLengthRudder = num2str(2*param{442,4}/(param{61,4}*(1+param{263,4})));
+
 % tipLengthRudder
+tipLengthRudder = num2str((2*param{442,4}/(param{61,4}*(1+param{263,4})))*param{263,4});
+
+% tipSetBackRudder (correct x Position of tip section to get straight 25% line)
+tipSetBackRudder = num2str((str2double(rootLengthRudder)-str2double(tipLengthRudder))*0.25);
+
 % spanRudder
+spanRudder = num2str(param{61,4});
+
 % sweepRudder
+sweepRudder = num2str(param{372,4});
