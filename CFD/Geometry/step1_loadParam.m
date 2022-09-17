@@ -17,4 +17,4 @@ param = cell{1};                      %extract matrix from cell
 
 clear cell, clear input  %delete temporary data
 
-disp('parameter input file loaded')
+disp('### parameter input file loaded')

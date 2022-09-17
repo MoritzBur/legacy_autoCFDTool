@@ -6,7 +6,7 @@
 
 
 % open default cpacs file
-cpacs = fileread('candidateScheme.cpacs.xml');
+cpacs = fileread('CFD\Geometry\candidateScheme.cpacs.xml');
 %cpacs = fileread('simpleCandidateScheme.cpacs.xml');
 
 % replace dummy parameters
@@ -65,8 +65,9 @@ cpacs = strrep(cpacs,'SWEEPRUDDER',sweepRudder);
 
 
 %save newcpacs to CAD-export ready cpacs file
-fid = fopen('candidate.cpacs.xml','wt');
+%fid = fopen("CFD\Geometry\candidate.cpacs.xml",'wt');
+fid = fopen("M:\Studium\Projektarbeit\Projektarbeit_CFD\autoCFDTool\CFD\Geometry\candidate.cpacs.xml",'wt');
 fprintf(fid,'%s',cpacs);
 fclose(fid);
 
-disp('CPACS definition file has been edited')
+disp('### CPACS definition file has been edited')

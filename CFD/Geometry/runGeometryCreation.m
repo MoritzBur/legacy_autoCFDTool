@@ -13,4 +13,4 @@ run("step5_prepareCAD4Meshing.m")
 
 clear;
 
-disp('runGeometryCreation finished')
+disp('###### runGeometryCreation finished')

@@ -6,3 +6,5 @@
 
 %pyrunfile ("exportCAD.py", '.\candidate.cpacs.xml')
 system('python3.9 .\exportCAD.py .\candidate.cpacs.xml')
+
+disp('### CAD export finished')

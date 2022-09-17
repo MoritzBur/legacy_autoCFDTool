@@ -181,3 +181,5 @@ spanRudder = num2str(param{61,4});
 
 % sweepRudder
 sweepRudder = num2str(param{372,4});
+
+disp('### input geometry data converted')
