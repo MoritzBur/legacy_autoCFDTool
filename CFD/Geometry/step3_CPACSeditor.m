@@ -7,6 +7,7 @@
 
 % open default cpacs file
 cpacs = fileread('candidateScheme.cpacs.xml');
+%cpacs = fileread('simpleCandidateScheme.cpacs.xml');
 
 % replace dummy parameters
 % fuselage parameters

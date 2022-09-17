@@ -4,7 +4,7 @@
 % developer:Moritz Burmester
 % contact:moritz@burmester-iz.de
 
-% extract usable paramater data
+% extract usable parameter data
 
 % fuselage parameters
 %%%%%%%%%%%%%%%%%%%%%
@@ -49,7 +49,7 @@ lePosWing = num2str(param{163,4}+param{216,4}-param{224,4}*0.25);
 % special treatment for different planform options necessary!
 
 % verticalPosWing
-verticalPosWing = num2str(((-param{184,4}/2+(param{162,4}-1)*param{184,4}/2))*8*0.0001);
+verticalPosWing = num2str(((-param{184,4}/2+(param{162,4}-1)*param{184,4}/2))*7*0.0001);
 
 % profileWing
 profileWing = convertCharsToStrings(param{377,4});
