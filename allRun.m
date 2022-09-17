@@ -4,6 +4,8 @@
 % developer:Moritz Burmester
 % contact:moritz@burmester-iz.de
 
+%this file has to be run from folder "autoCFDTool"
+
 run("CFD\Geometry\runGeometryCreation.m")
 %run("CFD\Mesh\runMeshingProcess.m")
 %run("CFD\Solver\runSolver.m")
