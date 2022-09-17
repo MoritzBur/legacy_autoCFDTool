@@ -1,0 +1,36 @@
+Auto-Transcript Start Time:  15:51:46, 17 Sep 2022 Mitteleuropäische Sommerzeit 
+Current Directory: "M:\Studium\Projektarbeit\Projektarbeit_CFD\autoCFDTool\CFD\Mesh"
+
+              Welcome to ANSYS Fluent 2022 R1
+
+              Copyright 1987-2022 ANSYS, Inc. All Rights Reserved.
+              Unauthorized use, distribution or duplication is prohibited.
+              This product is subject to U.S. laws governing export and re-export.
+              For full Legal Notice, see documentation.
+
+Build Time: Nov 29 2021 12:23:13 EST  Build Id: 10213  
+ 
+Connected License Server List:	
+
+     --------------------------------------------------------------
+     This is a student version of ANSYS FLUENT. Usage of this product
+     license is limited to the terms and conditions specified in your ANSYS
+     license form, additional terms section.
+     --------------------------------------------------------------
+Host spawning Node 0 on machine "herbert" (win64).
+
+-------------------------------------------------------------------------------
+ID    Hostname  Core  O.S.         PID    Vendor                          
+-------------------------------------------------------------------------------
+n0    herbert   1/4  Windows-x64  6060   Intel(R) Core(TM) i7-6700K      
+host  herbert        Windows-x64  16620  Intel(R) Core(TM) i7-6700K      
+
+MPI Option Selected: intel
+-------------------------------------------------------------------------------
+
+Cleanup script file is M:\\Studium\\Projektarbeit\\Projektarbeit_CFD\\autoCFDTool\\CFD\\Mesh\\cleanup-fluent-herbert-16620.bat
+(cx-gui-do cx-activate-tab-index "NavigationPane*Frame1(TreeTab)" 0)
+
+Reading journal file M:\Studium\Projektarbeit\Projektarbeit_CFD\autoCFDTool\CFD\Mesh\fluentMeshing.jou...
+
+> 

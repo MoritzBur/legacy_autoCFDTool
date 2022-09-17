@@ -4,4 +4,7 @@
 % developer:Moritz Burmester
 % contact:moritz@burmester-iz.de
 
-system('fluent 3d -meshing -hidden -i "M:\Studium\Projektarbeit\Projektarbeit_CFD\autoCFDTool\CFD\Mesh\fluentMeshing.jou"')
+run("step1_editMeshParamInJournal.m")
+run("step2_runMesherUsingJournal.m")
+
+disp('###### runMeshingProcess finished')
