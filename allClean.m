@@ -14,6 +14,7 @@ delete CFD\Mesh\debug.log
 delete CFD\Mesh\*.trn
 delete CFD\Mesh\*.bat
 delete CFD\Mesh\CFD_Mesh.cas.h5
+delete CFD\Mesh\fluentMeshing.jou
 
 
 clear
