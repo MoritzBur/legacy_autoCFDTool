@@ -4,7 +4,9 @@
 % developer:Moritz Burmester
 % contact:moritz@burmester-iz.de
 
+disp('### step4_exportCAD started...')
+
 %pyrunfile ("exportCAD.py", '.\candidate.cpacs.xml')
 system('python3.9 .\exportCAD.py .\candidate.cpacs.xml')
 
-disp('### CAD export finished')
+disp('### step4_exportCAD finished')

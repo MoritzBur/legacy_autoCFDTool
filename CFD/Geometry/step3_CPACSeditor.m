@@ -4,6 +4,7 @@
 % developer:Moritz Burmester
 % contact:moritz@burmester-iz.de
 
+disp('### step3_CPACSeditor started...')
 
 % open default cpacs file
 cpacs = fileread('CFD\Geometry\candidateScheme.cpacs.xml');
@@ -70,4 +71,4 @@ fid = fopen("M:\Studium\Projektarbeit\Projektarbeit_CFD\autoCFDTool\CFD\Geometry
 fprintf(fid,'%s',cpacs);
 fclose(fid);
 
-disp('### CPACS definition file has been edited')
+disp('### step3_CPACSeditor finished')

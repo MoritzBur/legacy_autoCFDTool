@@ -1,10 +1,10 @@
-% step1_editMeshParamInJournal.m
+% step1_editSolutionParamInJournal.m
 % writes desired meshing parameters into fluent journal file
-% date of creation: 17.09.2022
+% date of creation: 28.09.2022
 % developer:Moritz Burmester
 % contact:moritz@burmester-iz.de
 
-disp('### editMeshParamInJournal started...')
+disp('### editSolutionParamInJournal started...')
 
 % include meshing parameter file
 load Input\meshingParameters.mat;
@@ -22,4 +22,4 @@ fid = fopen("M:\Studium\Projektarbeit\Projektarbeit_CFD\autoCFDTool\CFD\Mesh\flu
 fprintf(fid,'%s',meshing);
 fclose(fid);
 
-disp('### editMeshParamInJournal finished')
+disp('### editSolutionParamInJournal finished')

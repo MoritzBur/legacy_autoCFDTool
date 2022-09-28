@@ -6,6 +6,8 @@
 % developer:Moritz Burmester
 % contact:moritz@burmester-iz.de
 
+disp('### step5_prepareCAD4Meshing started...')
+
 system('"C:\ProgramData\Microsoft\Windows\Start Menu\Programs\Ansys 2022 R1\Ansys Discovery Suite\SpaceClaim 2022 R1.lnk" /RunScript="M:\Studium\Projektarbeit\Projektarbeit_CFD\autoCFDTool\CFD\Geometry\prepareCAD4Meshing.scscript" /UseCurrentDirectory=True /Headless=True /ExitAfterScript=True ')
 
-disp('### CAD preparation finished')
+disp('### step5_prepareCAD4Meshing finished')

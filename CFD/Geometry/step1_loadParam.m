@@ -4,7 +4,7 @@
 % developer:Moritz Burmester
 % contact:moritz@burmester-iz.de
 
-
+disp('### step1_loadParam started...')
 
 %Path for input file has to be set or automated in some way!
 
@@ -17,4 +17,4 @@ param = cell{1};                      %extract matrix from cell
 
 clear cell, clear input  %delete temporary data
 
-disp('### parameter input file loaded')
+disp('### step1_loadParam finished')

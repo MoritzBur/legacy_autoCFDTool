@@ -4,6 +4,8 @@
 % developer:Moritz Burmester
 % contact:moritz@burmester-iz.de
 
+disp('### step2_convertData started...')
+
 % extract usable parameter data
 
 % fuselage parameters
@@ -182,4 +184,4 @@ spanRudder = num2str(param{61,4});
 % sweepRudder
 sweepRudder = num2str(param{372,4});
 
-disp('### input geometry data converted')
+disp('### step2_convertData finished')

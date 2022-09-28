@@ -1,11 +1,11 @@
-% step2_runMesherUsingJournal.m
+% step2_runSolverUsingJournal.m
 % runs fluent mesher in batch mode using fluentMeshing.jou
-% date of creation: 17.09.2022
+% date of creation: 28.09.2022
 % developer:Moritz Burmester
 % contact:moritz@burmester-iz.de
 
-disp('### runMesherUsingJournal started...')
+disp('### runSolverUsingJournal started...')
 
 system('fluent 3d -meshing -hidden -i "M:\Studium\Projektarbeit\Projektarbeit_CFD\autoCFDTool\CFD\Mesh\fluentMeshing.jou"')
 
-disp('### runMesherUsingJournal finished')
+disp('### runSolverUsingJournal finished')

@@ -4,6 +4,7 @@
 % developer:Moritz Burmester
 % contact:moritz@burmester-iz.de
 
+disp('###### runGeometryCreation started...')
 
 run("step1_loadParam.m")
 run("step2_convertData.m")
