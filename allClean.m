@@ -11,6 +11,9 @@ delete CFD\Geometry\debug.log
 delete CFD\Geometry\demolog.txt
 
 delete CFD\Mesh\debug.log
+delete CFD\Mesh\*.trn
+delete CFD\Mesh\*.bat
+delete CFD\Mesh\CFD_Mesh.cas.h5
 
 
 clear
