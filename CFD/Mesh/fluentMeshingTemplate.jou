@@ -14,11 +14,17 @@
 (%py-exec "workflow.TaskObject['wingtip'].Arguments.setState({r'AddChild': r'yes',r'BOIControlName': r'wingtip',r'BOIFaceLabelList': [r'wingtip'],r'BOISize': SIZEWINGTIP,})")
 
 ;edit boundary layers
-(%py-exec "workflow.TaskObject['uniform_1'].Arguments.setState({r'AddChild': r'yes',r'BLControlName': r'uniform_1',r'BLRegionList': [r'volumenk-rper'],r'BLZoneList': [r'wingtip', r'wingsurf', r'volumenk-rper:1'],r'CompleteBLRegionList': [r'volumenk-rper'],r'CompleteBLZoneList': [r'wingtip', r'wingsurf', r'volumenk-rper:1'],r'FirstHeight': 0.3,r'NumberOfLayers': NUMBEROFLAYERS,r'OffsetMethodType': r'uniform',})")
+(%py-exec "workflow.TaskObject['uniform_1'].Arguments.setState({r'AddChild': r'yes',r'BLControlName': r'uniform_1',r'BLRegionList': [r'volumenk-rper'],r'BLZoneList': [r'wingtip', r'wingsurf', r'volumenk-rper:1'],r'CompleteBLRegionList': [r'volumenk-rper'],r'CompleteBLZoneList': [r'wingtip', r'wingsurf', r'volumenk-rper:1'],r'FirstHeight': FIRSTLAYERHEIGHT,r'NumberOfLayers': NUMBEROFLAYERS,r'OffsetMethodType': r'uniform',})")
 
 
 ;generate mesh
 (%py-exec "workflow.TaskObject['Generate the Volume Mesh'].ExecuteUpstreamNonExecutedAndThisTask()")
+
+;set mesh quality limit
+(%py-exec "workflow.TaskObject['Improve Volume Mesh'].Arguments.setState({r'CellQualityLimit': 0.15,r'VMImprovePreferences': {r'ShowVMImprovePreferences': True,r'VIQualityIterations': 5,r'VIQualityMinAngle': 0,r'VIgnoreFeature': r'yes',},})")
+
+;improve mesh quality 
+(%py-exec "workflow.TaskObject['Improve Volume Mesh'].Execute()")
 
 ;write mesh to case file
 (cx-gui-do cx-activate-item "MenuBar*WriteSubMenu*Case...")
