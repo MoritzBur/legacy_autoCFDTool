@@ -16,6 +16,9 @@ meshing = strrep(meshing,'SIZEWINGSURF',num2str(sizeWingSurf));
 meshing = strrep(meshing,'SIZEWINGTIP',num2str(sizeWingTip));
 meshing = strrep(meshing,'NUMBEROFLAYERS',num2str(numberOfLayers));
 meshing = strrep(meshing,'FIRSTLAYERHEIGHT',num2str(firstLayerHeight));
+meshing = strrep(meshing,'CURVATURENORMALANGLE',num2str(curvatureNormalAngle));
+meshing = strrep(meshing,'CURVATUREMAXSIZE',num2str(curvatureMaxSize));
+meshing = strrep(meshing,'CURVATUREMINSIZE',num2str(curvatureMinSize));
 
 % save meshing journal
 

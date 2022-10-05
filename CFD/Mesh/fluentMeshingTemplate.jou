@@ -1,34 +1,47 @@
 /file/set-tui-version "22.1"
-
+;
+;
 ;load base case as template
 (cx-gui-do cx-activate-item "MenuBar*ReadSubMenu*Case...")
 (cx-gui-do cx-set-file-dialog-entries "Select File" '( "baseCase.msh.cas.h5") "CFF Case Files (*.cas.h5 *.msh.h5 )")
 (%py-exec "meshing.GlobalSettings.LengthUnit.setState(None)")
 (%py-exec "workflow.LoadState(ListOfRoots=[r'meshing', r'workflow'])")
-
+;
+;
+;revert to clean base
+(%py-exec "workflow.TaskObject['Import Geometry'].Revert()")
+;
+;
 ;import geometry file
 (%py-exec "workflow.TaskObject['Import Geometry'].Execute()")
-
+;
+;
 ;edit local sizing parameters of surfaces
 (%py-exec "workflow.TaskObject['wingsurf'].Arguments.setState({r'AddChild': r'yes',r'BOIControlName': r'wingsurf',r'BOIFaceLabelList': [r'wingsurf'],r'BOISize': SIZEWINGSURF,})")
 (%py-exec "workflow.TaskObject['wingtip'].Arguments.setState({r'AddChild': r'yes',r'BOIControlName': r'wingtip',r'BOIFaceLabelList': [r'wingtip'],r'BOISize': SIZEWINGTIP,})")
-
+(%py-exec "workflow.TaskObject['curvature'].Arguments.setState({r'AddChild': r'yes',r'BOIControlName': r'curvature',r'BOICurvatureNormalAngle': CURVATURENORMALANGLE,r'BOIExecution': r'Curvature',r'BOIFaceZoneList': [r'origin-wingsurf'],r'BOIMaxSize': CURVATUREMAXSIZE,r'BOIMinSize': CURVATUREMINSIZE,r'BOIZoneorLabel': r'zone',})")
+;
+;
 ;edit boundary layers
 (%py-exec "workflow.TaskObject['uniform_1'].Arguments.setState({r'AddChild': r'yes',r'BLControlName': r'uniform_1',r'BLRegionList': [r'volumenk-rper'],r'BLZoneList': [r'wingtip', r'wingsurf', r'volumenk-rper:1'],r'CompleteBLRegionList': [r'volumenk-rper'],r'CompleteBLZoneList': [r'wingtip', r'wingsurf', r'volumenk-rper:1'],r'FirstHeight': FIRSTLAYERHEIGHT,r'NumberOfLayers': NUMBEROFLAYERS,r'OffsetMethodType': r'uniform',})")
-
-
+;
+;
 ;generate mesh
 (%py-exec "workflow.TaskObject['Generate the Volume Mesh'].ExecuteUpstreamNonExecutedAndThisTask()")
-
+;
+;
 ;set mesh quality limit
 (%py-exec "workflow.TaskObject['Improve Volume Mesh'].Arguments.setState({r'CellQualityLimit': 0.15,r'VMImprovePreferences': {r'ShowVMImprovePreferences': True,r'VIQualityIterations': 5,r'VIQualityMinAngle': 0,r'VIgnoreFeature': r'yes',},})")
-
+;
+;
 ;improve mesh quality 
 (%py-exec "workflow.TaskObject['Improve Volume Mesh'].Execute()")
-
+;
+;
 ;write mesh to case file
 (cx-gui-do cx-activate-item "MenuBar*WriteSubMenu*Case...")
 (cx-gui-do cx-set-file-dialog-entries "Select File" '( "//192.168.178.31/moritz/Studium/Projektarbeit/Projektarbeit_CFD/autoCFDTool/CFD/Mesh/CFD_Mesh.cas.h5") "CFF Case Files (*.cas.h5 )")
-
+;
+;
 ;exit fluent meshing
 exit
