@@ -1,0 +1,50 @@
+/file/set-tui-version "22.1"
+;
+;open basecase
+/file/read-case "M:/Studium/Projektarbeit/Projektarbeit_CFD/autoCFDTool/CFD/Solver/CFD_Basecase.cas.h5"
+;
+;import mesh
+/file/replace-mesh "M:/Studium/Projektarbeit/Projektarbeit_CFD/autoCFDTool/CFD/Mesh/CFD_Mesh.cas.h5"
+;
+;change input parameters
+/define/parameters/input-parameters edit "airSpeed" "airSpeed" AIRSPEED
+/define/parameters/input-parameters edit "AoA" "AoA" ANGLEOFATTACK
+;
+;set reference values
+/report/reference-values/area REFERENCEAREA
+/report/reference-values/length REFERENCELENGTH
+/report/reference-values/density REFERENCEDENSITY
+/report/reference-values/temperature REFERENCETEMPERATURE
+/report/reference-values/viscosity REFERENCEVISCOSITY
+/report/reference-values/velocity AIRSPEED
+/report/reference-values/pressure REFERENCEPRESSURE
+
+;
+;initialize fields
+/solve/initialize/hyb-initialization
+;
+;solve
+/solve/iterate ITERATIONS yes
+;
+;report
+/report/simulation-reports generate-simulation-reports REPORTNAME
+/report/simulation-reports export-simulation-reports-as-pdf
+;/report/simulation-reports export-simulation-reports-as-html
+;
+;write case and data to disk
+/file/write-case "M:/Studium/Projektarbeit/Projektarbeit_CFD/autoCFDTool/CFD/Solver/CFD_Simulation.cas.h5"
+/file/write-data "M:/Studium/Projektarbeit/Projektarbeit_CFD/autoCFDTool/CFD/Solver/CFD_Simulation.pdat.dat.h5"
+;
+;
+;OPTIONAL PART
+;remove ";" to uncomment lines and edit placeholders in capital letters
+;export images
+;/display/objects/display OBJECTNAME
+;/display/save-picture FILENAME1
+;
+;export residuals plot
+;/plot/residuals yes yes yes yes yes yes
+;/display/save-picture FILENAME2
+
+;exit fluent
+exit

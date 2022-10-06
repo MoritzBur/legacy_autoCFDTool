@@ -8,4 +8,4 @@
 
 run("CFD\Geometry\runGeometryCreation.m")
 run("CFD\Mesh\runMeshingProcess.m")
-%run("CFD\Solver\runSolver.m")
+run("CFD\Solver\runSolver.m")

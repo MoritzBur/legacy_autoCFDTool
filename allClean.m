@@ -16,6 +16,13 @@ delete CFD\Mesh\*.bat
 delete CFD\Mesh\CFD_Mesh.cas.h5
 delete CFD\Mesh\fluentMeshing.jou
 
+delete CFD\Solver\fluentSolver.jou
+delete CFD\Solver\CFD_Simulation.cas.h5
+delete CFD\Solver\CFD_Simulation.pdat.dat.h5
+
+delete fluent*
+
+
 
 clear
 clc
