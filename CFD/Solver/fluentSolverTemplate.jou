@@ -18,7 +18,6 @@
 /report/reference-values/viscosity REFERENCEVISCOSITY
 /report/reference-values/velocity AIRSPEED
 /report/reference-values/pressure REFERENCEPRESSURE
-
 ;
 ;initialize fields
 /solve/initialize/hyb-initialization
@@ -35,9 +34,9 @@
 /file/write-case "M:/Studium/Projektarbeit/Projektarbeit_CFD/autoCFDTool/CFD/Solver/CFD_Simulation.cas.h5"
 /file/write-data "M:/Studium/Projektarbeit/Projektarbeit_CFD/autoCFDTool/CFD/Solver/CFD_Simulation.pdat.dat.h5"
 ;
-;
 ;OPTIONAL PART
 ;remove ";" to uncomment lines and edit placeholders in capital letters
+;
 ;export images
 ;/display/objects/display OBJECTNAME
 ;/display/save-picture FILENAME1
@@ -45,6 +44,6 @@
 ;export residuals plot
 ;/plot/residuals yes yes yes yes yes yes
 ;/display/save-picture FILENAME2
-
+;
 ;exit fluent
 exit

@@ -23,12 +23,14 @@ solution = strrep(solution,'REFERENCEVISCOSITY',num2str(referenceViscosity));
 solution = strrep(solution,'REFERENCEPRESSURE',num2str(referencePressure));
 solution = strrep(solution,'REPORTNAME',reportName);
 
+% remove doubled newline characters to prevent output of empty lines, which can cause errors while reading the journal in fluent
+%solution = strrep(solution,newline,'');  
 
 % save meshing journal
 
 fid = fopen("M:\Studium\Projektarbeit\Projektarbeit_CFD\autoCFDTool\CFD\Solver\fluentSolver.jou",'wt');
 fprintf(fid,'%s',solution);
 fclose(fid);
-clear
+%clear
 
 disp('### editSolutionParamInJournal finished')

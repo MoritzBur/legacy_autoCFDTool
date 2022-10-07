@@ -20,6 +20,9 @@ meshing = strrep(meshing,'CURVATURENORMALANGLE',num2str(curvatureNormalAngle));
 meshing = strrep(meshing,'CURVATUREMAXSIZE',num2str(curvatureMaxSize));
 meshing = strrep(meshing,'CURVATUREMINSIZE',num2str(curvatureMinSize));
 
+% remove newline characters to prevent output of empty lines, which can cause errors while reading the journal in fluent
+%meshing = strrep(meshing,newline,'');
+
 % save meshing journal
 
 fid = fopen("M:\Studium\Projektarbeit\Projektarbeit_CFD\autoCFDTool\CFD\Mesh\fluentMeshing.jou",'wt');

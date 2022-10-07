@@ -19,6 +19,10 @@ delete CFD\Mesh\fluentMeshing.jou
 delete CFD\Solver\fluentSolver.jou
 delete CFD\Solver\CFD_Simulation.cas.h5
 delete CFD\Solver\CFD_Simulation.pdat.dat.h5
+delete CFD\Solver\forces.out
+delete CFD\Solver\coefficients.out
+delete CFD\Solver\*.trn
+
 
 delete fluent*
 
