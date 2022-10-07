@@ -19,6 +19,47 @@
 /report/reference-values/velocity AIRSPEED
 /report/reference-values/pressure REFERENCEPRESSURE
 ;
+;set vector components for forces (needs to be done by recorded journal as follows)
+;set vector components for lift direction
+(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Solution|Report Definitions|lift"))
+(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Solution|Report Definitions|lift"))
+(cx-gui-do cx-activate-item "NavigationPane*Frame2*Table1*List_Tree2")
+(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Solution|Report Definitions|lift"))
+(cx-gui-do cx-set-real-entry-list "Lift Report Definition*Table1*Table1*Table2*Table2(Force Vector)*RealEntry1(X)" '( XCOMPONENTOFLIFT))
+(cx-gui-do cx-set-real-entry-list "Lift Report Definition*Table1*Table1*Table2*Table2(Force Vector)*RealEntry2(Y)" '( 0))
+(cx-gui-do cx-set-real-entry-list "Lift Report Definition*Table1*Table1*Table2*Table2(Force Vector)*RealEntry3(Z)" '( ZCOMPONENTOFLIFT))
+(cx-gui-do cx-activate-item "Lift Report Definition*PanelButtons*PushButton1(OK)")
+;
+;set vector components for drag direction
+(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Solution|Report Definitions|drag"))
+(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Solution|Report Definitions|drag"))
+(cx-gui-do cx-activate-item "NavigationPane*Frame2*Table1*List_Tree2")
+(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Solution|Report Definitions|drag"))
+(cx-gui-do cx-set-real-entry-list "Drag Report Definition*Table1*Table1*Table2*Table2(Force Vector)*RealEntry1(X)" '( XCOMPONENTOFDRAG))
+(cx-gui-do cx-set-real-entry-list "Drag Report Definition*Table1*Table1*Table2*Table2(Force Vector)*RealEntry2(Y)" '( 0))
+(cx-gui-do cx-set-real-entry-list "Drag Report Definition*Table1*Table1*Table2*Table2(Force Vector)*RealEntry3(Z)" '( ZCOMPONENTOFDRAG))
+(cx-gui-do cx-activate-item "Drag Report Definition*PanelButtons*PushButton1(OK)")
+;
+;set vector components for lift-coefficiet direction
+(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Solution|Report Definitions|lift_coefficient"))
+(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Solution|Report Definitions|lift_coefficient"))
+(cx-gui-do cx-activate-item "NavigationPane*Frame2*Table1*List_Tree2")
+(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Solution|Report Definitions|lift_coefficient"))
+(cx-gui-do cx-set-real-entry-list "Lift Report Definition*Table1*Table1*Table2*Table2(Force Vector)*RealEntry1(X)" '( XCOMPONENTOFLIFT))
+(cx-gui-do cx-set-real-entry-list "Lift Report Definition*Table1*Table1*Table2*Table2(Force Vector)*RealEntry2(Y)" '( 0))
+(cx-gui-do cx-set-real-entry-list "Lift Report Definition*Table1*Table1*Table2*Table2(Force Vector)*RealEntry3(Z)" '( ZCOMPONENTOFLIFT))
+(cx-gui-do cx-activate-item "Lift Report Definition*PanelButtons*PushButton1(OK)")
+;
+;set vector components for drag-coefficient direction
+(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Solution|Report Definitions|drag_coefficient"))
+(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Solution|Report Definitions|drag_coefficient"))
+(cx-gui-do cx-activate-item "NavigationPane*Frame2*Table1*List_Tree2")
+(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Solution|Report Definitions|drag_coefficient"))
+(cx-gui-do cx-set-real-entry-list "Drag Report Definition*Table1*Table1*Table2*Table2(Force Vector)*RealEntry1(X)" '( XCOMPONENTOFDRAG))
+(cx-gui-do cx-set-real-entry-list "Drag Report Definition*Table1*Table1*Table2*Table2(Force Vector)*RealEntry2(Y)" '( 0))
+(cx-gui-do cx-set-real-entry-list "Drag Report Definition*Table1*Table1*Table2*Table2(Force Vector)*RealEntry3(Z)" '( ZCOMPONENTOFDRAG))
+(cx-gui-do cx-activate-item "Drag Report Definition*PanelButtons*PushButton1(OK)")
+;
 ;initialize fields
 /solve/initialize/hyb-initialization
 ;

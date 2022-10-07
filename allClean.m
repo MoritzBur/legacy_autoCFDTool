@@ -22,6 +22,7 @@ delete CFD\Solver\CFD_Simulation.pdat.dat.h5
 delete CFD\Solver\forces.out
 delete CFD\Solver\coefficients.out
 delete CFD\Solver\*.trn
+delete CFD\Solver\*.bat
 
 
 delete fluent*
