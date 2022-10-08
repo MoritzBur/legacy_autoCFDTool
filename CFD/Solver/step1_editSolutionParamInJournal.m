@@ -10,16 +10,16 @@ disp('### editSolutionParamInJournal started...')
 load Input\solverParameters.mat;
 
 % calculate flow vector components for forces
-xComponentOfLift = -sin(deg2rad(angleOfAttack));
-zComponentOfLift = cos(deg2rad(angleOfAttack));
-xComponentOfDrag = cos(deg2rad(angleOfAttack));
-zComponentOfDrag = sin(deg2rad(angleOfAttack));
+xComponentOfLift = -sin(deg2rad(currentAngleOfAttack));
+zComponentOfLift = cos(deg2rad(currentAngleOfAttack));
+xComponentOfDrag = cos(deg2rad(currentAngleOfAttack));
+zComponentOfDrag = sin(deg2rad(currentAngleOfAttack));
 
 % replace placeholders in meshing journal
 solution = fileread('CFD\Solver\fluentSolverTemplate.jou');
 
 solution = strrep(solution,'AIRSPEED',num2str(airSpeed));
-solution = strrep(solution,'ANGLEOFATTACK',num2str(angleOfAttack));
+solution = strrep(solution,'ANGLEOFATTACK',num2str(currentAngleOfAttack));
 
 solution = strrep(solution,'ITERATIONS',num2str(iterations));
 

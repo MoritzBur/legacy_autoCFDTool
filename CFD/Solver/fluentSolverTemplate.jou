@@ -64,12 +64,12 @@
 /solve/initialize/hyb-initialization
 ;
 ;solve
-/solve/iterate ITERATIONS yes
+/solve/iterate ITERATIONS
 ;
 ;report
-/report/simulation-reports generate-simulation-reports REPORTNAME
-/report/simulation-reports export-simulation-reports-as-pdf
-;/report/simulation-reports export-simulation-reports-as-html
+/report/simulation-reports/generate-simulation-report REPORTNAME
+/report/simulation-reports/export-simulation-report-as-pdf "REPORTNAME" "M:/Studium/Projektarbeit/Projektarbeit_CFD/autoCFDTool/CFD/Solver/REPORTNAME"
+;/report/simulation-reports/export-simulation-report-as-html "REPORTNAME" "M:/Studium/Projektarbeit/Projektarbeit_CFD/autoCFDTool/CFD/Solver/REPORTNAME"
 ;
 ;write case and data to disk
 /file/write-case "M:/Studium/Projektarbeit/Projektarbeit_CFD/autoCFDTool/CFD/Solver/CFD_Simulation.cas.h5"
