@@ -6,6 +6,11 @@
 
 %this file has to be run from folder "autoCFDTool"
 
+% navigate to parent path in case this script was run from somewhere else
+parentPath = mfilename("fullpath");
+parentPath = parentPath(1:end-7);
+cd(parentPath)
+
 run("CFD\Geometry\runGeometryCreation.m")
 run("CFD\Mesh\runMeshingProcess.m")
 run("CFD\Solver\runSolver.m")

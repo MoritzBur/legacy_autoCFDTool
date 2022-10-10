@@ -8,7 +8,7 @@ disp('### step4_exportCAD started...')
 
 load ..\..\Input\envConfig.mat
 
-command = append("python",num2str(pythonVersion)," .\exportCAD.py .\candidate.cpacs.xml");
+command = append("python",pythonVersion," .\exportCAD.py .\candidate.cpacs.xml");
 system(command)
 
 
