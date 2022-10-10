@@ -6,7 +6,10 @@
 
 disp('### step4_exportCAD started...')
 
-%pyrunfile ("exportCAD.py", '.\candidate.cpacs.xml')
-system('python3.9 .\exportCAD.py .\candidate.cpacs.xml')
+load ..\..\Input\envConfig.mat
+
+command = append("python",num2str(pythonVersion)," .\exportCAD.py .\candidate.cpacs.xml");
+system(command)
+
 
 disp('### step4_exportCAD finished')

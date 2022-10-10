@@ -42,7 +42,7 @@ solution = strrep(solution,'REPORTNAME',reportName);
 
 % save meshing journal
 
-fid = fopen("M:\Studium\Projektarbeit\Projektarbeit_CFD\autoCFDTool\CFD\Solver\fluentSolver.jou",'wt');
+fid = fopen("fluentSolver.jou",'wt');
 fprintf(fid,'%s',solution);
 fclose(fid);
 %clear

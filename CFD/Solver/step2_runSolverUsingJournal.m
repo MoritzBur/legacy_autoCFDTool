@@ -6,6 +6,5 @@
 
 disp('### runSolverUsingJournal started...')
 
-%system('fluent 3d -hidden -i "M:\Studium\Projektarbeit\Projektarbeit_CFD\autoCFDTool\CFD\Solver\fluentSolver.jou"')
-system('fluent 3ddp -hidden -i "M:\Studium\Projektarbeit\Projektarbeit_CFD\autoCFDTool\CFD\Solver\fluentSolver.jou"')
+system('fluent 3ddp -hidden -i "fluentSolver.jou"')
 disp('### runSolverUsingJournal finished')

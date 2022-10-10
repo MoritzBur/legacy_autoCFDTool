@@ -7,7 +7,9 @@
 % contact:moritz@burmester-iz.de
 
 disp('### step5_prepareCAD4Meshing started...')
-load ..\..\Input\pathConfig.mat
+
+load ..\..\Input\envConfig.mat
+
 currentPath = pwd;
 command = append(spaceClaimPath," /RunScript=",'"',currentPath,"\",'prepareCAD4Meshing.scscript"'," /UseCurrentDirectory=True /Headless=True /ExitAfterScript=True");
 system(command)
