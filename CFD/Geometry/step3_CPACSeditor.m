@@ -67,7 +67,7 @@ cpacs = strrep(cpacs,'SWEEPRUDDER',sweepRudder);
 
 %save newcpacs to CAD-export ready cpacs file
 %fid = fopen("CFD\Geometry\candidate.cpacs.xml",'wt');
-fid = fopen("M:\Studium\Projektarbeit\Projektarbeit_CFD\autoCFDTool\CFD\Geometry\candidate.cpacs.xml",'wt');
+fid = fopen("candidate.cpacs.xml",'wt');
 fprintf(fid,'%s',cpacs);
 fclose(fid);
 

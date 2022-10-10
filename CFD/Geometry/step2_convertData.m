@@ -39,7 +39,6 @@ hullSection3x = num2str(param{216,4}+param{219,4}*1.075);
 % lenghtTail
 tailSection1x = num2str(param{216,4}+param{219,4}+param{212,4}*0.53);
 tailSection2x = num2str(param{216,4}+param{219,4}+param{212,4});
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%bis hier getestet und ok!
 
 % main wing paramaters
 %%%%%%%%%%%%%%%%%%%%%%

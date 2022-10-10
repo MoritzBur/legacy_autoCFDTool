@@ -30,8 +30,8 @@ system('rmdir /s /q M:\Studium\Projektarbeit\Projektarbeit_CFD\autoCFDTool\CFD\S
 
 %next command is only to be used after making sure the output directory
 %will be created again
-system('rmdir /s /q M:\Studium\Projektarbeit\Projektarbeit_CFD\autoCFDTool\Output')
-system('mkdir M:\Studium\Projektarbeit\Projektarbeit_CFD\autoCFDTool\Output')
+system('rmdir /s /q Output')
+system('mkdir Output')
 
 delete fluent*
 
