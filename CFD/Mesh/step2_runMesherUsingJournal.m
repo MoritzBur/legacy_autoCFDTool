@@ -5,7 +5,6 @@
 % contact:moritz@burmester-iz.de
 
 disp('### runMesherUsingJournal started...')
-
-system('fluent 3d -meshing -hidden -i "M:\Studium\Projektarbeit\Projektarbeit_CFD\autoCFDTool\CFD\Mesh\fluentMeshing.jou"')
+system('fluent 3d -meshing -hidden -i "fluentMeshing.jou"')
 
 disp('### runMesherUsingJournal finished')

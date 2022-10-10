@@ -24,8 +24,7 @@ meshing = strrep(meshing,'CURVATUREMINSIZE',num2str(curvatureMinSize));
 %meshing = strrep(meshing,newline,'');
 
 % save meshing journal
-
-fid = fopen("M:\Studium\Projektarbeit\Projektarbeit_CFD\autoCFDTool\CFD\Mesh\fluentMeshing.jou",'wt');
+fid = fopen("fluentMeshing.jou",'wt');
 fprintf(fid,'%s',meshing);
 fclose(fid);
 
