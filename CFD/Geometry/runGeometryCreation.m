@@ -9,8 +9,9 @@ disp('###### runGeometryCreation started...')
 run("step1_loadParam.m")
 run("step2_convertData.m")
 run("step3_CPACSeditor.m")
-run("step4_exportCAD.m")
-run("step5_prepareCAD4Meshing.m")
+run("step4_exportAircraftCAD.m")
+run("step5_flowDomainEditor.m")
+run("step6_buildFlowDomain.m")
 
 clear;
 
