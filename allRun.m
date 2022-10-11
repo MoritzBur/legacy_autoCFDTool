@@ -6,12 +6,13 @@
 
 %this file has to be run from folder "autoCFDTool"
 
+load Input\envConfig.mat
+
 % navigate to parent path in case this script was run from somewhere else
 parentPath = mfilename("fullpath");
 parentPath = parentPath(1:end-7);
 cd(parentPath)
-
-load Input\envConfig.mat
+% save parentPath for automatic implementation in journals and scripts
 save Input\envConfig.mat
 
 run("CFD\Geometry\runGeometryCreation.m")
