@@ -13,6 +13,7 @@
 ;
 ;
 ;import geometry file
+(%py-exec "workflow.TaskObject['Import Geometry'].Arguments.setState({r'FileName': r'PARENTPATH/CFD/Geometry/flowDomain.scdoc',r'ImportCadPreferences': {r'CIRefaceting': True,r'CITolerence': 1,r'MaxFacetLength': 30,r'ShowImportCadPreferences': True,},r'NumParts': 1,})")
 (%py-exec "workflow.TaskObject['Import Geometry'].Execute()")
 ;
 ;

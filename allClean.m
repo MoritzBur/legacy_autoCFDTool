@@ -14,7 +14,7 @@ cleanOutput =    1;
 if cleanGeometry == 1
     delete CFD\Geometry\candidate.cpacs.xml
     delete CFD\Geometry\candidate.step
-    delete CFD\Geometry\fluidDomain4Meshing.scdoc
+    delete CFD\Geometry\flowDomain.scdoc
     delete CFD\Geometry\debug.log
     delete CFD\Geometry\demolog.txt
 end
