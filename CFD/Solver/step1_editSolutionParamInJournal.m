@@ -8,6 +8,7 @@ disp('### editSolutionParamInJournal started...')
 
 % include meshing parameter file
 load Input\solverParameters.mat;
+load Input\envConfig.mat
 
 % calculate flow vector components for forces
 xComponentOfLift = -sin(deg2rad(currentAngleOfAttack));
@@ -36,6 +37,7 @@ solution = strrep(solution,'XCOMPONENTOFDRAG',num2str(xComponentOfDrag));
 solution = strrep(solution,'ZCOMPONENTOFDRAG',num2str(zComponentOfDrag));
 
 solution = strrep(solution,'REPORTNAME',reportName);
+solution = strrep(solution,'PARENTPATH',parentPath);
 
 % remove doubled newline characters to prevent output of empty lines, which can cause errors while reading the journal in fluent
 %solution = strrep(solution,newline,'');  

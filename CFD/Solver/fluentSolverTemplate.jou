@@ -1,10 +1,10 @@
 /file/set-tui-version "22.1"
 ;
 ;open basecase
-/file/read-case "M:/Studium/Projektarbeit/Projektarbeit_CFD/autoCFDTool/CFD/Solver/CFD_Basecase.cas.h5"
+/file/read-case "CFD_Basecase.cas.h5"
 ;
 ;import mesh
-/file/replace-mesh "M:/Studium/Projektarbeit/Projektarbeit_CFD/autoCFDTool/CFD/Mesh/CFD_Mesh.cas.h5"
+/file/replace-mesh "PARENTPATH/CFD/Mesh/CFD_Mesh.cas.h5"
 ;
 ;change input parameters
 /define/parameters/input-parameters edit "airSpeed" "airSpeed" AIRSPEED
@@ -68,12 +68,12 @@
 ;
 ;report
 /report/simulation-reports/generate-simulation-report REPORTNAME
-/report/simulation-reports/export-simulation-report-as-pdf "REPORTNAME" "M:/Studium/Projektarbeit/Projektarbeit_CFD/autoCFDTool/CFD/Solver/REPORTNAME"
-;/report/simulation-reports/export-simulation-report-as-html "REPORTNAME" "M:/Studium/Projektarbeit/Projektarbeit_CFD/autoCFDTool/CFD/Solver/REPORTNAME"
+/report/simulation-reports/export-simulation-report-as-pdf "REPORTNAME" "PARENTPATH/CFD/Solver/REPORTNAME"
+;/report/simulation-reports/export-simulation-report-as-html "REPORTNAME" "PARENTPATH/CFD/Solver/REPORTNAME"
 ;
 ;write case and data to disk
-/file/write-case "M:/Studium/Projektarbeit/Projektarbeit_CFD/autoCFDTool/CFD/Solver/CFD_Simulation.cas.h5"
-/file/write-data "M:/Studium/Projektarbeit/Projektarbeit_CFD/autoCFDTool/CFD/Solver/CFD_Simulation.pdat.dat.h5"
+/file/write-case "PARENTPATH/CFD/Solver/CFD_Simulation.cas.h5"
+/file/write-data "PARENTPATH/CFD/Solver/CFD_Simulation.pdat.dat.h5"
 ;
 ;OPTIONAL PART
 ;remove ";" to uncomment lines and edit placeholders in capital letters

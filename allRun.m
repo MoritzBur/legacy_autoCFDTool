@@ -11,6 +11,9 @@ parentPath = mfilename("fullpath");
 parentPath = parentPath(1:end-7);
 cd(parentPath)
 
+load Input\envConfig.mat
+save Input\envConfig.mat
+
 run("CFD\Geometry\runGeometryCreation.m")
 run("CFD\Mesh\runMeshingProcess.m")
 run("CFD\Solver\runSolver.m")

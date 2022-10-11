@@ -8,6 +8,7 @@ disp('### editMeshParamInJournal started...')
 
 % include meshing parameter file
 load Input\meshingParameters.mat;
+load Input\envConfig.mat
 
 % replace placeholders in meshing journal
 meshing = fileread('CFD\Mesh\fluentMeshingTemplate.jou');
@@ -20,8 +21,7 @@ meshing = strrep(meshing,'CURVATURENORMALANGLE',num2str(curvatureNormalAngle));
 meshing = strrep(meshing,'CURVATUREMAXSIZE',num2str(curvatureMaxSize));
 meshing = strrep(meshing,'CURVATUREMINSIZE',num2str(curvatureMinSize));
 
-% remove newline characters to prevent output of empty lines, which can cause errors while reading the journal in fluent
-%meshing = strrep(meshing,newline,'');
+meshing = strrep(meshing,'PARENTPATH',num2str(parentPath));
 
 % save meshing journal
 fid = fopen("fluentMeshing.jou",'wt');

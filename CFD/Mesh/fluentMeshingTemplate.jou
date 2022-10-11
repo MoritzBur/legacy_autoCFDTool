@@ -3,7 +3,7 @@
 ;
 ;load base case as template
 (cx-gui-do cx-activate-item "MenuBar*ReadSubMenu*Case...")
-(cx-gui-do cx-set-file-dialog-entries "Select File" '( "baseCase.msh.cas.h5") "CFF Case Files (*.cas.h5 *.msh.h5 )")
+(cx-gui-do cx-set-file-dialog-entries "Select File" '( "PARENTPATH/CFD/Mesh/baseCase.msh.cas.h5") "CFF Case Files (*.cas.h5 *.msh.h5 )")
 (%py-exec "meshing.GlobalSettings.LengthUnit.setState(None)")
 (%py-exec "workflow.LoadState(ListOfRoots=[r'meshing', r'workflow'])")
 ;
@@ -40,7 +40,7 @@
 ;
 ;write mesh to case file
 (cx-gui-do cx-activate-item "MenuBar*WriteSubMenu*Case...")
-(cx-gui-do cx-set-file-dialog-entries "Select File" '( "//192.168.178.31/moritz/Studium/Projektarbeit/Projektarbeit_CFD/autoCFDTool/CFD/Mesh/CFD_Mesh.cas.h5") "CFF Case Files (*.cas.h5 )")
+(cx-gui-do cx-set-file-dialog-entries "Select File" '( "PARENTPATH/CFD/Mesh/CFD_Mesh.cas.h5") "CFF Case Files (*.cas.h5 )")
 ;
 ;
 ;exit fluent meshing
