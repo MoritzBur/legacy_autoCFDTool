@@ -17,6 +17,7 @@ if cleanGeometry == 1
     delete CFD\Geometry\flowDomain.scdoc
     delete CFD\Geometry\debug.log
     delete CFD\Geometry\demolog.txt
+    delete CFD\Geometry\spaceClaimDomain.py
 end
 
 if cleanMesh == 1
