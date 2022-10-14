@@ -15,6 +15,12 @@ cd(parentPath)
 % save parentPath for automatic implementation in journals and scripts
 save Input\envConfig.mat
 
+
+% run geometry creation
 run("CFD\Geometry\runGeometryCreation.m")
+
+% run meshing process
 run("CFD\Mesh\runMeshingProcess.m")
+
+% run solver
 run("CFD\Solver\runSolver.m")
