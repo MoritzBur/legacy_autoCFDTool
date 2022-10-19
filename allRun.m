@@ -20,7 +20,7 @@ save Input\envConfig.mat
 run("CFD\Geometry\runGeometryCreation.m")
 
 % run meshing process
-run("CFD\Mesh\runMeshingProcess.m")
+%run("CFD\Mesh\runMeshingProcess.m")
 
 % run solver
-run("CFD\Solver\runSolver.m")
+%run("CFD\Solver\runSolver.m")

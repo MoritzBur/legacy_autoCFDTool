@@ -1,12 +1,22 @@
 # Python Script, API Version = V21
 
+
 # Parameter
-xmaxBound = XMAXBOUND
-xminBound = XMINBOUND
-ymaxBound = YMAXBOUND
+xmaxBound = 4000
+xminBound = -2000
+ymaxBound = 5000
 #yminBound = 0 (symmetry)
-zmaxBound = ZMAXBOUND
-zminBound = ZMINBOUND
+zmaxBound = 1200
+zminBound = -1200
+
+
+
+
+
+
+
+
+
 
 
 
@@ -18,10 +28,14 @@ zminBound = ZMINBOUND
 ###############################################
 #create domain Box
 
+
 # Insert From File
 importOptions = ImportOptions.Create()
-DocumentInsert.Execute(r"PARENTPATH\CFD\Geometry\candidate.step", importOptions, GetMaps("7294dcae"))
+DocumentInsert.Execute(r"M:\Studium\Projektarbeit\Projektarbeit_CFD\autoCFDTool\CFD\Geometry\candidate.step", importOptions, GetMaps("7294dcae"))
 # EndBlock
+
+
+
 
 
 #define new sketch
@@ -360,7 +374,10 @@ ViewHelper.SetObjectVisibility(selection, visibility, inSelectedView, faceLevel)
 # EndBlock
 
 
+
+
 # Save File
 options = ExportOptions.Create()
-DocumentSave.Execute(r"PARENTPATH\CFD\Geometry\flowDomain.scdoc", options)
+DocumentSave.Execute(r"M:\Studium\Projektarbeit\Projektarbeit_CFD\autoCFDTool\CFD\Geometry\flowDomain.scdoc", options)
 # EndBlock
+

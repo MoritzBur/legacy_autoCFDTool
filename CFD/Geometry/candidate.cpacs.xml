@@ -17,8 +17,8 @@
                         <name>main wing</name>
                         <transformation>
                             <translation>
-                                <x>LEPOSWING</x>
-                                <z>VERTICALPOSWING</z>
+                                <x>1.3886</x>
+                                <z>0.14</z>
                             </translation>
                             <rotation>
                                 <x>0.0</x>
@@ -49,17 +49,17 @@
                                 <elements>
                                     <element uID="wing1section1element1">
                                         <name>wing root element</name>
-                                        <airfoilUID>PROFILEWING</airfoilUID>
+                                        <airfoilUID>E210</airfoilUID>
                                         <transformation>
                                             <rotation>
                                                 <x>0.0</x>
-                                                <y>ALPHAWINGROOT</y>
+                                                <y>2.5</y>
                                                 <z>0.0</z>
                                             </rotation>
                                             <scaling>
-                                                <x>ROOTLENGTHWING</x>
-                                                <y>ROOTLENGTHWING</y>
-                                                <z>ROOTLENGTHWING</z>
+                                                <x>0.44572</x>
+                                                <y>0.44572</y>
+                                                <z>0.44572</z>
                                             </scaling>
                                             <translation>
                                                 <x>0.0</x>
@@ -92,17 +92,17 @@
                                 <elements>
                                     <element uID="wing1section2element1">
                                         <name>wing kink element</name>
-                                        <airfoilUID>PROFILEWING</airfoilUID>
+                                        <airfoilUID>E210</airfoilUID>
                                         <transformation>
                                             <rotation>
                                                 <x>0.0</x>
-                                                <y>ALPHAWINGMIDSECTION</y>
+                                                <y>1.8</y>
                                                 <z>0.0</z>
                                             </rotation>
                                             <scaling>
-                                                <x>ROOTLENGTHWING</x>
-                                                <y>ROOTLENGTHWING</y>
-                                                <z>ROOTLENGTHWING</z>
+                                                <x>0.44572</x>
+                                                <y>0.44572</y>
+                                                <z>0.44572</z>
                                             </scaling>
                                             <translation>
                                                 <x>0.0</x>
@@ -135,20 +135,20 @@
                                 <elements>
                                     <element uID="wing1section3element1">
                                         <name>wing tip element</name>
-                                        <airfoilUID>PROFILEWING</airfoilUID>
+                                        <airfoilUID>E210</airfoilUID>
                                         <transformation>
                                             <rotation>
                                                 <x>0.0</x>
-                                                <y>ALPHAWINGTIP</y>
+                                                <y>0.5</y>
                                                 <z>0.0</z>
                                             </rotation>
                                             <scaling>
-                                                <x>TIPLENGTHWING</x>
-                                                <y>TIPLENGTHWING</y>
-                                                <z>TIPLENGTHWING</z>
+                                                <x>0.22286</x>
+                                                <y>0.22286</y>
+                                                <z>0.22286</z>
                                             </scaling>
                                             <translation>
-                                                <x>TIPSETBACKWING</x>
+                                                <x>0.055715</x>
                                                 <y>0.0</y>
                                                 <z>0.0</z>
                                             </translation>
@@ -172,15 +172,15 @@
                         <positionings>
                             <positioning uID="kinkPos">
                                 <name>Vertical Tailplane Section Positioning</name>
-                                <length>KINKPOSWING</length>
-                                <sweepAngle>SWEEPWING</sweepAngle>
+                                <length>0.805</length>
+                                <sweepAngle>0</sweepAngle>
                                 <dihedralAngle>0</dihedralAngle>
                                 <toSectionUID>wing1section2</toSectionUID>
                             </positioning>
                             <positioning uID="tipPos">
                                 <name>Vertical Tailplane Section Positioning</name>
-                                <length>SEMISPANWING</length>
-                                <sweepAngle>SWEEPWING</sweepAngle>
+                                <length>2.3</length>
+                                <sweepAngle>0</sweepAngle>
                                 <dihedralAngle>0</dihedralAngle>
                                 <toSectionUID>wing1section3</toSectionUID>
                             </positioning>
@@ -190,7 +190,7 @@
                         <name>elevator</name>
                         <transformation>
                             <translation>
-                                <x>LEPOSELEVATOR</x>
+                                <x>2.9214</x>
                                 <z>0.0</z>
                             </translation>
                             <rotation>
@@ -222,17 +222,17 @@
                                 <elements>
                                     <element uID="tailWing1section1element1">
                                         <name>wing root element</name>
-                                        <airfoilUID>PROFILEELEVATOR</airfoilUID>
+                                        <airfoilUID>NACA0012</airfoilUID>
                                         <transformation>
                                             <rotation>
                                                 <x>0.0</x>
-                                                <y>ALPHAELEVATORROOT</y>
+                                                <y>0</y>
                                                 <z>0.0</z>
                                             </rotation>
                                             <scaling>
-                                                <x>ROOTLENGTHELEVATOR</x>
-                                                <y>ROOTLENGTHELEVATOR</y>
-                                                <z>ROOTLENGTHELEVATOR</z>
+                                                <x>0.30363</x>
+                                                <y>0.30363</y>
+                                                <z>0.30363</z>
                                             </scaling>
                                             <translation>
                                                 <x>0.0</x>
@@ -265,17 +265,17 @@
                                 <elements>
                                     <element uID="tailWing1section2element1">
                                         <name>wing kink element</name>
-                                        <airfoilUID>PROFILEELEVATOR</airfoilUID>
+                                        <airfoilUID>NACA0012</airfoilUID>
                                         <transformation>
                                             <rotation>
                                                 <x>0.0</x>
-                                                <y>ALPHAELEVATORMIDSECTION</y>
+                                                <y>0</y>
                                                 <z>0.0</z>
                                             </rotation>
                                             <scaling>
-                                                <x>ROOTLENGTHELEVATOR</x>
-                                                <y>ROOTLENGTHELEVATOR</y>
-                                                <z>ROOTLENGTHELEVATOR</z>
+                                                <x>0.30363</x>
+                                                <y>0.30363</y>
+                                                <z>0.30363</z>
                                             </scaling>
                                             <translation>
                                                 <x>0.0</x>
@@ -308,20 +308,20 @@
                                 <elements>
                                     <element uID="tailWing1section3element1">
                                         <name>wing tip element</name>
-                                        <airfoilUID>PROFILEELEVATOR</airfoilUID>
+                                        <airfoilUID>NACA0012</airfoilUID>
                                         <transformation>
                                             <rotation>
                                                 <x>0.0</x>
-                                                <y>ALPHAELEVATORTIP</y>
+                                                <y>0</y>
                                                 <z>0.0</z>
                                             </rotation>
                                             <scaling>
-                                                <x>TIPLENGTHELEVATOR</x>
-                                                <y>TIPLENGTHELEVATOR</y>
-                                                <z>TIPLENGTHELEVATOR</z>
+                                                <x>0.15181</x>
+                                                <y>0.15181</y>
+                                                <z>0.15181</z>
                                             </scaling>
                                             <translation>
-                                                <x>TIPSETBACKELEVATOR</x>
+                                                <x>0.037955</x>
                                                 <y>0.0</y>
                                                 <z>0.0</z>
                                             </translation>
@@ -345,15 +345,15 @@
                         <positionings>
                             <positioning uID="tailKinkPos">
                                 <name>horizontal Tailplane Section Positioning</name>
-                                <length>KINKPOSELEVATOR</length>
-                                <sweepAngle>SWEEPELEVATOR</sweepAngle>
+                                <length>0.01</length>
+                                <sweepAngle>0</sweepAngle>
                                 <dihedralAngle>0</dihedralAngle>
                                 <toSectionUID>tailWing1section2</toSectionUID>
                             </positioning>
                             <positioning uID="tailTipPos">
                                 <name>horizontal Tailplane Section Positioning</name>
-                                <length>SEMISPANELEVATOR</length>
-                                <sweepAngle>SWEEPELEVATOR</sweepAngle>
+                                <length>0.55</length>
+                                <sweepAngle>0</sweepAngle>
                                 <dihedralAngle>0</dihedralAngle>
                                 <toSectionUID>tailWing1section3</toSectionUID>
                             </positioning>
@@ -363,7 +363,7 @@
                         <name>rudder</name>
                         <transformation>
                             <translation>
-                                <x>LEPOSRUDDER</x>
+                                <x>2.8268</x>
                                 <z>0.0</z>
                             </translation>
                             <rotation>
@@ -395,7 +395,7 @@
                                 <elements>
                                     <element uID="tailWing2section1element1">
                                         <name>wing root element</name>
-                                        <airfoilUID>PROFILERUDDER</airfoilUID>
+                                        <airfoilUID>NACA0012</airfoilUID>
                                         <transformation>
                                             <rotation>
                                                 <x>0.0</x>
@@ -403,9 +403,9 @@
                                                 <z>0.0</z>
                                             </rotation>
                                             <scaling>
-                                                <x>ROOTLENGTHRUDDER</x>
-                                                <y>ROOTLENGTHRUDDER</y>
-                                                <z>ROOTLENGTHRUDDER</z>
+                                                <x>0.39818</x>
+                                                <y>0.39818</y>
+                                                <z>0.39818</z>
                                             </scaling>
                                             <translation>
                                                 <x>0.0</x>
@@ -438,7 +438,7 @@
                                 <elements>
                                     <element uID="tailWing2section2element1">
                                         <name>wing tip element</name>
-                                        <airfoilUID>PROFILERUDDER</airfoilUID>
+                                        <airfoilUID>NACA0012</airfoilUID>
                                         <transformation>
                                             <rotation>
                                                 <x>0.0</x>
@@ -446,12 +446,12 @@
                                                 <z>0.0</z>
                                             </rotation>
                                             <scaling>
-                                                <x>TIPLENGTHRUDDER</x>
-                                                <y>TIPLENGTHRUDDER</y>
-                                                <z>TIPLENGTHRUDDER</z>
+                                                <x>0.23891</x>
+                                                <y>0.23891</y>
+                                                <z>0.23891</z>
                                             </scaling>
                                             <translation>
-                                                <x>TIPSETBACKRUDDER</x>
+                                                <x>0.039817</x>
                                                 <y>0.0</y>
                                                 <z>0.0</z>
                                             </translation>
@@ -470,8 +470,8 @@
                         <positionings>
                             <positioning uID="tail2KinkPos">
                                 <name>horizontal Tailplane Section Positioning</name>
-                                <length>SPANRUDDER</length>
-                                <sweepAngle>SWEEPRUDDER</sweepAngle>
+                                <length>1</length>
+                                <sweepAngle>0</sweepAngle>
                                 <dihedralAngle>0</dihedralAngle>
                                 <toSectionUID>tailWing2section2</toSectionUID>
                             </positioning>
@@ -485,8 +485,8 @@
                         <transformation>
                             <scaling>
                                 <x>1.0</x>
-                                <y>WIDTHFUSELAGE</y>
-                                <z>HEIGHTFUSELAGE</z>
+                                <y>0.5</y>
+                                <z>0.4</z>
                             </scaling>
                             <translation>
                                 <x>0.0</x>
@@ -507,7 +507,7 @@
                                 <elements>
                                     <element uID="noseSection1IDElement1">
                                         <name>Section 1</name>
-                                        <profileUID>CROSSSECTIONTYPE</profileUID>
+                                        <profileUID>squareProfile</profileUID>
                                         <transformation>
                                             <scaling>
                                                 <x>0.00</x>
@@ -527,13 +527,13 @@
                                         <z>1.0</z>
                                     </scaling>
                                     <translation>
-                                        <x>NOSESECTION2X</x>
+                                        <x>0.1125</x>
                                     </translation>
                                 </transformation>
                                 <elements>
                                     <element uID="noseSection2IDElement1">
                                         <name>Section 1</name>
-                                        <profileUID>CROSSSECTIONTYPE</profileUID>
+                                        <profileUID>squareProfile</profileUID>
                                         <transformation>
                                             <scaling>
                                                 <x>0.2</x>
@@ -553,13 +553,13 @@
                                         <z>1.0</z>
                                     </scaling>
                                     <translation>
-                                        <x>NOSESECTION3X</x>
+                                        <x>0.405</x>
                                     </translation>
                                 </transformation>
                                 <elements>
                                     <element uID="noseSection3IDElement1">
                                         <name>Section 1</name>
-                                        <profileUID>CROSSSECTIONTYPE</profileUID>
+                                        <profileUID>squareProfile</profileUID>
                                         <transformation>
                                             <scaling>
                                                 <x>0.425</x>
@@ -579,13 +579,13 @@
                                         <z>1.0</z>
                                     </scaling>
                                     <translation>
-                                        <x>NOSESECTION4X</x>
+                                        <x>0.9</x>
                                     </translation>
                                 </transformation>
                                 <elements>
                                     <element uID="noseSection4IDElement1">
                                         <name>Section 1</name>
-                                        <profileUID>CROSSSECTIONTYPE</profileUID>
+                                        <profileUID>squareProfile</profileUID>
                                         <transformation>
                                             <scaling>
                                                 <x>0.5</x>
@@ -605,13 +605,13 @@
                                     <z>1.0</z>
                                 </scaling>
                                 <translation>
-                                    <x>HULLSECTION1X</x>
+                                    <x>2.2875</x>
                                 </translation>
                             </transformation>
                             <elements>
                                 <element uID="hullSection1IDElement1">
                                     <name>Section 1</name>
-                                    <profileUID>CROSSSECTIONTYPE</profileUID>
+                                    <profileUID>squareProfile</profileUID>
                                     <transformation>
                                         <scaling>
                                             <x>0.5</x>
@@ -631,13 +631,13 @@
                                     <z>1.0</z>
                                 </scaling>
                                 <translation>
-                                    <x>HULLSECTION2X</x>
+                                    <x>2.4</x>
                                 </translation>
                             </transformation>
                             <elements>
                                 <element uID="hullSection2IDElement1">
                                     <name>Section 1</name>
-                                    <profileUID>CROSSSECTIONTYPE</profileUID>
+                                    <profileUID>squareProfile</profileUID>
                                     <transformation>
                                         <scaling>
                                             <x>0.4875</x>
@@ -657,13 +657,13 @@
                                     <z>1.0</z>
                                 </scaling>
                                 <translation>
-                                    <x>HULLSECTION3X</x>
+                                    <x>2.5125</x>
                                 </translation>
                             </transformation>
                             <elements>
                                 <element uID="hullSection3IDElement1">
                                     <name>Section 1</name>
-                                    <profileUID>CROSSSECTIONTYPE</profileUID>
+                                    <profileUID>squareProfile</profileUID>
                                     <transformation>
                                         <scaling>
                                             <x>0.45</x>
@@ -683,13 +683,13 @@
                                     <z>1.0</z>
                                 </scaling>
                                 <translation>
-                                    <x>TAILSECTION1X</x>
+                                    <x>2.983</x>
                                 </translation>
                             </transformation>
                             <elements>
                                 <element uID="tailSection1IDElement1">
                                     <name>Section 1</name>
-                                    <profileUID>CROSSSECTIONTYPE</profileUID>
+                                    <profileUID>squareProfile</profileUID>
                                     <transformation>
                                         <scaling>
                                             <x>0.25</x>
@@ -709,13 +709,13 @@
                                     <z>1.0</z>
                                 </scaling>
                                 <translation>
-                                    <x>TAILSECTION2X</x>
+                                    <x>3.5</x>
                                 </translation>
                             </transformation>
                             <elements>
                                 <element uID="tailSection2IDElement1">
                                     <name>Section 1</name>
-                                    <profileUID>CROSSSECTIONTYPE</profileUID>
+                                    <profileUID>squareProfile</profileUID>
                                     <transformation>
                                         <scaling>
                                             <x>0.0125</x>

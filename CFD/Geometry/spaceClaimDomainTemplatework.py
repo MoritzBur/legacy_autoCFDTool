@@ -76,7 +76,7 @@ result = Combine.Merge(targets)
 
 # Merge Bodies (Fuselage)
 targets = BodySelection.Create([GetRootPart().Components[0].Components[12].Content.Bodies[0],
-    GetRootPart().Components[0].Components[9].Content.Bodies[0]])
+    GetRootPart().Components[0].Components[8].Content.Bodies[0]])
 result = Combine.Merge(targets)
 # EndBlock
 
@@ -116,11 +116,14 @@ targets = BodySelection.Create([GetRootPart().Components[0].Components[12].Conte
 result = Combine.Merge(targets)
 # EndBlock
 
+
+
 # Merge Bodies (Horizontal Stabilizer)
-targets = BodySelection.Create([GetRootPart().Components[0].Components[8].Content.Bodies[0],
+targets = BodySelection.Create([GetRootPart().Components[0].Components[9].Content.Bodies[0],
     GetRootPart().Components[0].Components[11].Content.Bodies[0]])
 result = Combine.Merge(targets)
 # EndBlock
+
 
 
 
@@ -162,7 +165,7 @@ result = Combine.RemoveRegions(selection)
 
 # Intersect Bodies
 targets = BodySelection.Create(GetRootPart().Bodies[0])
-tools = BodySelection.Create(GetRootPart().Components[0].Components[8].Content.Bodies[0])
+tools = BodySelection.Create(GetRootPart().Components[0].Components[9].Content.Bodies[0])
 options = MakeSolidsOptions()
 result = Combine.Intersect(targets, tools, options)
 # EndBlock

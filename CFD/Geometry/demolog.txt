@@ -1,0 +1,11 @@
+TiGL log file created at: 22/10/18 18:59:11
+WRN 10/18 18:59:11 tigl.cpp:192] CPACS dataset version is higher than TIGL library version!
+ERR 10/18 18:59:11 CPACSStringVectorBase.cpp:141] Required attribute mapType is missing at xpath /cpacs/vehicles/profiles/fuselageProfiles/fuselageProfile[1]/pointList/kinks
+ERR 10/18 18:59:11 CPACSStringVectorBase.cpp:141] Required attribute mapType is missing at xpath /cpacs/vehicles/profiles/wingAirfoils/wingAirfoil[1]/pointList/x
+ERR 10/18 18:59:11 CPACSStringVectorBase.cpp:141] Required attribute mapType is missing at xpath /cpacs/vehicles/profiles/wingAirfoils/wingAirfoil[1]/pointList/y
+ERR 10/18 18:59:11 CPACSStringVectorBase.cpp:141] Required attribute mapType is missing at xpath /cpacs/vehicles/profiles/wingAirfoils/wingAirfoil[1]/pointList/z
+WRN 10/18 18:59:11 CCPACSWingProfile.cpp:84] The points don't seem to be ordered in a mathematical positive sense.
+ERR 10/18 18:59:11 CPACSStringVectorBase.cpp:141] Required attribute mapType is missing at xpath /cpacs/vehicles/profiles/wingAirfoils/wingAirfoil[2]/pointList/x
+ERR 10/18 18:59:11 CPACSStringVectorBase.cpp:141] Required attribute mapType is missing at xpath /cpacs/vehicles/profiles/wingAirfoils/wingAirfoil[2]/pointList/y
+ERR 10/18 18:59:11 CPACSStringVectorBase.cpp:141] Required attribute mapType is missing at xpath /cpacs/vehicles/profiles/wingAirfoils/wingAirfoil[2]/pointList/z
+WRN 10/18 18:59:11 CCPACSWingProfile.cpp:84] The points don't seem to be ordered in a mathematical positive sense.
