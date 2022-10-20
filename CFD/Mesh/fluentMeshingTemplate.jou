@@ -166,11 +166,11 @@ scoped-sizing compute
 ;edit boundary types
 
 /boundary manage type (*inlet*) velocity-inlet
-/boundary manage type (domain-ymax) velocity-inlet
-/boundary manage type (domain-zmin) velocity-inlet
-/boundary manage type (domain-zmax) velocity-inlet
+/boundary manage type (domain-ymax*) velocity-inlet
+/boundary manage type (domain-zmin*) velocity-inlet
+/boundary manage type (domain-zmax*) velocity-inlet
 /boundary manage type (*outlet*) pressure-outlet
-/boundary manage type (symmetry) symmetry
+/boundary manage type (symmetry*) symmetry
 
 
 
@@ -182,15 +182,32 @@ scoped-sizing compute
 
 
 
-
 ;check volume mesh quality
 
 /mesh check-quality
 
 
+
 ;remove unnecessary items
 
-mesh prepare-for-solve yes
+/mesh prepare-for-solve yes
+
+
+
+;edit boundary names
+
+/boundary/manage name *fuselage* fuselage
+/boundary/manage name *tailwing1* tailwing1
+/boundary/manage name *tailwing2* tailwing2
+/boundary/manage name *-wing1* wing1
+
+/boundary/manage name *symmetry* symmetry
+/boundary/manage name *ymax* ymax
+/boundary/manage name *zmax* zmax
+/boundary/manage name *zmin* zmin
+/boundary/manage name *outlet* pressureoutlet
+/boundary/manage name *inlet* velocityinlet
+/boundary/manage name *interior* interior
 
 
 

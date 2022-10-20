@@ -23,4 +23,4 @@ run("CFD\Geometry\runGeometryCreation.m")
 run("CFD\Mesh\runMeshingProcess.m")
 
 % run solver
-%run("CFD\Solver\runSolver.m")
+run("CFD\Solver\runSolver.m")

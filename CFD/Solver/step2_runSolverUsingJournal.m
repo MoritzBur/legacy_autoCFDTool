@@ -6,5 +6,5 @@
 
 disp('### runSolverUsingJournal started...')
 
-system('fluent 3ddp -hidden -i "fluentSolver.jou"')
+system('fluent 3ddp -t4 -hidden -i "fluentSolver.jou"')
 disp('### runSolverUsingJournal finished')

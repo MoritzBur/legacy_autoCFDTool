@@ -4,7 +4,7 @@
 /file/read-case "CFD_Basecase.cas.h5"
 ;
 ;import mesh
-/file/replace-mesh "PARENTPATH/CFD/Mesh/CFD_Mesh.cas.h5" ok
+/file/replace-mesh "PARENTPATH/CFD/Mesh/CFD_Mesh.cas.msh.h5" ok
 ;
 ;change input parameters
 /define/parameters/input-parameters edit "airSpeed" "airSpeed" AIRSPEED
