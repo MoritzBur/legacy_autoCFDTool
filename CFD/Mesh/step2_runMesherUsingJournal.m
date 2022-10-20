@@ -7,6 +7,6 @@
 disp('### runMesherUsingJournal started...')
 
 
-system('fluent 3d -meshing -hidden -i "fluentMeshing.jou"')
+system('fluent 3d -meshing -t4 -hidden -i "fluentMeshing.jou"')
 
 disp('### runMesherUsingJournal finished')

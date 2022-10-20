@@ -90,9 +90,13 @@ def python_demo(filename):
     #print ('Exporting geometry to candidate.igs')
     #tigl.exportIGES('candidate.igs')
 
-    # Export geometry to iges file
+    # Export geometry to step file
+    #print ('Exporting geometry to candidate.step')
+    #tigl.exportSTEP('candidate.step')
+
+        # Export geometry to fused step file
     print ('Exporting geometry to candidate.step')
-    tigl.exportSTEP('candidate.step')
+    tigl.exportFusedSTEP('candidate.step')
 
     tigl.logToFileDisabled()
     tigl.close()
