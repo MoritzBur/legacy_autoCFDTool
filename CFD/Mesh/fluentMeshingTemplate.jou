@@ -85,7 +85,7 @@
 /scoped-sizing create soft-wingSizing soft object-faces-and-edges yes no *wing* wingFaceMax globalGrowthRate globalMin  
 /scoped-sizing create curv-wingSizing curvature object-faces-and-edges yes no *wing* globalMin wingFaceMax globalGrowthRate normAngle
 /scoped-sizing create prox-wingSizing proximity edge-zone yes no *wing* globalMin faceMax globalGrowthRate cellsPerGap
-/scoped-sizing create curv-fuselageSizing curvature object-faces-and-edges yes no *fuselage fuselageFaceMin faceMax globalGrowthRate normAngle
+;/scoped-sizing create curv-fuselageSizing curvature object-faces-and-edges yes no *fuselage fuselageFaceMin faceMax globalGrowthRate normAngle
 
 
 
@@ -154,7 +154,7 @@ scoped-sizing compute
 ;define boundary layer prizm layers
 ;/mesh scoped-prisms create prism last-ratio firstLayerHeight numberOfLayers lastPercent internalmesh fluid-regions selected-face-zones candidate*
 /mesh scoped-prisms create wing-prism last-ratio firstLayerHeight numberOfLayers lastPercent internalmesh fluid-regions selected-face-zones *wing*
-/mesh scoped-prisms create fuselage-prism uniform firstLayerHeight numberOfLayers globalGrowthRate internalmesh fluid-regions selected-face-zones *fuse*
+;/mesh scoped-prisms create fuselage-prism uniform firstLayerHeight numberOfLayers globalGrowthRate internalmesh fluid-regions selected-face-zones *fuse*
 
 
 
@@ -188,6 +188,12 @@ scoped-sizing compute
 
 
 
+;scale down
+
+/mesh manage scale-model 0.001 0.001 0.001
+
+
+
 ;remove unnecessary items
 
 /mesh prepare-for-solve yes
@@ -196,9 +202,9 @@ scoped-sizing compute
 
 ;edit boundary names
 
-/boundary/manage name *fuselage* fuselage
-/boundary/manage name *tailwing1* tailwing1
-/boundary/manage name *tailwing2* tailwing2
+;/boundary/manage name *fuselage* fuselage
+;/boundary/manage name *tailwing1* tailwing1
+;/boundary/manage name *tailwing2* tailwing2
 /boundary/manage name *-wing1* wing1
 
 /boundary/manage name *symmetry* symmetry
