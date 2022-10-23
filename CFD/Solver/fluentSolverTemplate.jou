@@ -60,11 +60,26 @@
 (cx-gui-do cx-set-real-entry-list "Drag Report Definition*Table1*Table1*Table2*Table2(Force Vector)*RealEntry3(Z)" '( ZCOMPONENTOFDRAG))
 (cx-gui-do cx-activate-item "Drag Report Definition*PanelButtons*PushButton1(OK)")
 ;
+;tweak AMR settings
+/mesh/adapt/manage-criteria/edit/hess_p_and_k frequency AMRREFINEFREQUENCY
+/mesh/adapt/set maximum-cell-count AMRMAXCELLCOUNT
+/mesh/adapt/set maximum-refinement-level AMRMAXREFINELEVEL
+/mesh/adapt/set minimum-edge-length AMRMINEDGELENGTH
+/mesh/adapt/set minimum-cell-quality AMRMINCELLQUALITY
+;
 ;initialize fields
 /solve/initialize/hyb-initialization
 ;
 ;solve
 /solve/iterate ITERATIONS
+;
+;deactivate AMR from now on and go on solving
+/mesh/adapt/manage-criteria/edit/hess_p_and_k active no
+;
+;go back to higher menu hierachy to avoid fluent error
+q
+;
+/solve/iterate ITERATEAFTERREFINE
 ;
 ;report
 /report/simulation-reports/generate-simulation-report REPORTNAME
